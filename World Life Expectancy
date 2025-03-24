@@ -1,1 +1,50 @@
+📌 Project Overview
+The World Life Expectancy project is an SQL-based analysis exploring global trends in life expectancy. Divided into two key phases—Data Cleaning and Exploratory Data Analysis (EDA)—it highlights how SQL can deliver valuable insights into global health.
 
+🧹 Phase 1: Data Cleaning
+This stage transformed raw, inconsistent data into a structured dataset. The original data included country, year, development status, GDP, population, and life expectancy, but had missing values and duplicates.
+
+🔧 Key Steps:
+
+Initial Audit: Checked structure and nulls in GDP, population, and life expectancy.
+
+Missing Values: Replaced with country- and status-specific averages using AVG() and ROUND().
+
+Duplicates: Removed using ROW_NUMBER() with PARTITION BY.
+
+Data Types: Cast fields properly as FLOAT or INT.
+
+Validation: Ensured completeness and reviewed distributions.
+
+✅ Result: A cleaned dataset of 2,938 reliable records, ready for analysis.
+
+📊 Phase 2: EDA
+With clean data, the focus shifted to life expectancy trends.
+
+🔍 Key Insights:
+
+Top & Bottom Countries: Japan ranked highest; Sierra Leone among the lowest (GROUP BY, ORDER BY).
+
+Development Status: Developed nations averaged 78 years vs. 64 for developing ones.
+
+GDP Correlation: Weak-to-moderate positive link with life expectancy.
+
+Population Impact: No strong correlation, but large nations improved over time.
+
+Yearly Trends: Life expectancy rose steadily from 2000 to 2015.
+
+Annual Performers: Used RANK() to highlight yearly leaders and laggards.
+
+🧰 Tools & Techniques:
+SQL (MySQL/PostgreSQL), AVG(), ROUND(), ROW_NUMBER(), RANK(), CASE, CTEs, window functions.
+
+💡 Learnings:
+
+Clean data is essential for trustworthy analysis.
+
+SQL is a strong tool for EDA.
+
+Localized imputation improves data reliability.
+
+🎯 Outcome:
+A refined dataset and valuable insights into how GDP, development, and population relate to global health—showcasing SQL’s power in data cleaning and analysis.
