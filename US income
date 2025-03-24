@@ -1,1 +1,26 @@
+This project involved the end-to-end preparation and exploratory analysis of a large US income dataset using SQL. 
+The goal was to extract insights into income distribution across demographics such as age, gender, education, and employment type.
 
+I started with a comprehensive data cleaning process, resolving missing values, standardising inconsistent labels, and removing duplicates. 
+This involved creating temporary tables, updating incorrect entries, and using CASE, TRIM, and other SQL functions to ensure data integrity.
+
+Once cleaned, I moved on to the exploratory data analysis (EDA) stage. Key analyses included:
+
+Identifying income trends by age group and education level
+
+Comparing income levels across genders and ethnicities
+
+Evaluating the relationship between workclass and income
+
+Summarising categorical variables with GROUP BY, COUNT, and AVG functions
+
+Visualising income brackets using simple aggregated queries
+
+The project strengthened my SQL skills in joins, subqueries, data transformation, and the application of analytical logic in structured datasets. 
+It also reinforced best practices in data wrangling, normalisation, and reproducible SQL scripting.
+
+Tools used: MySQL, DB Browser for SQLite
+Key skills: Data Cleaning, SQL Querying, EDA, Data Validation, Schema Understanding
+
+This project not only showcased my technical proficiency with SQL but also my ability to draw meaningful insights from raw, 
+messy data—making it suitable for decision-making or further modelling in data science pipelines.
